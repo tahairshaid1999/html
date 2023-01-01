@@ -1,0 +1,82 @@
+div#carousel { 
+    perspective: 1200px; 
+    background-image: url(https://f.top4top.io/p_2495trr7e1.jpg);
+    padding-top: 10%; 
+    font-size:0; 
+    margin-bottom: 3rem; 
+    overflow: hidden; 
+  }
+  figure#spinner { 
+    transform-style: preserve-3d; 
+    height: 650px; 
+    transform-origin: 50% 50% -500px; 
+    transition: 1s; 
+  } 
+  figure#spinner img { 
+    width: 40%; max-width: 425px; 
+    position: absolute; left: 30%;
+    transform-origin: 50% 50% -500px;
+    outline:1px solid transparent; 
+  }
+  .fa, .fas {
+    font-weight: 900;
+    /* left: 33px; */
+    padding-left: 10px;
+}
+  figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+  }
+  figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+  figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+  figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+  figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+  figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+  figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+  figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+  figure#spinner img:nth-child(9) { transform: rotateY(-45deg); }
+  figure#spinner img:nth-child(10) { transform: rotateY(-45deg); }
+  div#carousel ~ span { 
+    color: #fff; 
+    margin: 5%; 
+    display: inline-block; 
+    text-decoration: none; 
+    font-size: 2rem; 
+    transition: 0.6s color; 
+    position: relative; 
+    margin-top: -6rem; 
+    border-bottom: none; 
+    line-height: 0; }
+  div#carousel ~ span:hover { color: #888; cursor: pointer; }
+  
+  #wrap {margin: 10px auto;text-align: center;
+  }
+  .btn-slide, .btn-slide2 {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 170px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd00;
+    border: 2px solid #c00;
+    margin: -16px;
+    transition: .5s;
+  }
+  .btn-slide2 {border: 2px solid #3467d6;     margin: 30px;}
+  .btn-slide:hover {background-color: #c00;}
+  .btn-slide2:hover {background-color: #a8c93d00; border-color: #c00;}
+  .btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {left: 100%;margin-left: -45px;background-color: #fdfdfd;color: #c00;}
+  .btn-slide2:hover span.circle2 {color: #c00;}
+  .btn-slide:hover span.title, .btn-slide2:hover span.title2 {left: 40px;opacity: 0;}
+  .btn-slide:hover span.title-hover, .btn-slide2:hover span.title-hover2 {opacity: 1;left: 40px;}
+  .btn-slide span.circle, .btn-slide2 span.circle2 {display: block;background-color: #c00;color: #fff;position: absolute;float: left;margin: 5px;line-height: 42px;height: 40px;width: 40px;top: -2px;left: 0;transition: .5s;border-radius: 50%;}
+  .btn-slide2 span.circle2 {
+    background-color: #3467d6;
+  }
+  .btn-slide span.title, .btn-slide span.title-hover, .btn-slide2 span.title2, .btn-slide2 span.title-hover2 {position: absolute; left: 90px;text-align: center;margin: 0 auto;font-size: 16px;font-weight: bold;color: #c00;transition: .5s;top:-2px}
+  .btn-slide2 span.title2,
+  .btn-slide2 span.title-hover2 {color: #3467d6;left: 72px;}
+  .btn-slide span.title-hover, .btn-slide2 span.title-hover2 {left: 80px;opacity: 0;}
+  .btn-slide span.title-hover, .btn-slide2 span.title-hover2 {color: #fff;}
+  span.title{left: 60px!important}
+  

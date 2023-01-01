@@ -1,0 +1,121 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #fc0000, #e84040 , rgb(228, 96, 96) ,rgb(238, 147, 147) , rgb(249, 205, 212));
+  background-size: 469% 100%;
+  animation: bganimation 5s infinite;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+
+
+
+#wrap {margin: 10px auto;text-align: center;
+}
+.btn-slide, .btn-slide2 {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 170px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd00;
+    border: 2px solid #c00;
+    margin: -16px;
+    transition: .5s;
+}
+img.Logo {
+  height: 154px;
+  padding-left: 0%;
+}
+nav{
+  height: 0px;
+}
+.btn-slide2 {
+  border: 2px solid #3467d6;
+  margin: 30px 0px 72px 1350px;
+}
+.btn-slide:hover {background-color: #c00;}
+.btn-slide2:hover {background-color: #a8c93d00; border-color: #c00;}
+.btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {left: 100%;margin-left: -45px;background-color: #fdfdfd;color: #c00;}
+.btn-slide2:hover span.circle2 {color: #c00;}
+.btn-slide:hover span.title, .btn-slide2:hover span.title2 {left: 40px;opacity: 0;}
+.btn-slide:hover span.title-hover, .btn-slide2:hover span.title-hover2 {opacity: 1;left: 40px;}
+.btn-slide span.circle, .btn-slide2 span.circle2 {display: block;background-color: #c00;color: #fff;position: absolute;float: left;margin: 5px;line-height: 42px;height: 40px;width: 40px;top: -2px;left: 0;transition: .5s;border-radius: 50%;}
+.btn-slide2 span.circle2 {
+    background-color: #3467d6;
+}
+.btn-slide span.title, .btn-slide span.title-hover, .btn-slide2 span.title2, .btn-slide2 span.title-hover2 {position: absolute; left: 90px;text-align: center;margin: 0 auto;font-size: 16px;font-weight: bold;color: #c00;transition: .5s;top:-2px}
+.btn-slide2 span.title2,
+.btn-slide2 span.title-hover2 {color: #3467d6;left: 72px;}
+.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {left: 80px;opacity: 0;}
+.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {color: #fff;}
+span.title{left: 60px!important}
+
+
+@keyframes bganimation {
+  0%{
+      background-position: 0% 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position: 0% 50%;
+  }
+}
