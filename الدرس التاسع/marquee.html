@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        marquee span img{
+            width: 200px;
+            height: 150px;
+            object-fit: contain;
+            margin: 0 20px;
+        }
+        #coder span{
+            font-family: monospace;
+            font-size: 22px;
+            font-weight: bold;
+            background: rgb(28,65,65);
+            color: white;
+            margin: 0px 10px;
+            padding: 10px;
+        }
+    </style>
+    <title>marquee</title>
+</head>
+<body>
+    <form>
+        <marquee style="background: #F75151;" scrollamount="10" direction="left">
+            <span><a href="https://www.youtube.com/@codertaha">
+                <img src="./img.jpg" alt="img">
+            </a></span>
+            <span><a href="https://www.youtube.com/@codertaha">
+                <img src="./img.jpg" alt="img">
+            </a></span>
+            <span><a href="https://www.youtube.com/@codertaha">
+                <img src="./img.jpg" alt="img">
+            </a></span>
+
+        </marquee>
+
+        <marquee id="coder" scrollamount="10">
+            <span>انا احب ان ادرس البرمجة</span>
+      
+            <span>اخر الاخبار شاب ينتحر من اجل هبله</span>
+          
+            <span>اخر الاخبار ابو كرش يقتل نفسه من اجل عدم حصوله على الطعام</span>
+        </marquee>
+    </form>
+</body>
+</html>

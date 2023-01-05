@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بروجيكت</title>
+</head>
+<body>
+    <button onclick="openDialog()"> عرض مزيد</button>
+    <dialog id="box">
+        <h2> Coder Taha </h2>
+        <img src="./img.jpg" width="200"/> 
+        <br>
+        <button onclick="closeDialog()"> اغلاق</button>
+    </dialog>
+    
+    <script>
+        alert("اهلا وسهلا بك في موقعي");
+        function openDialog(){
+            document.getElementById("box").setAttribute("open","true");
+        }
+        function closeDialog(){
+            document.getElementById("box").removeAttribute("open");
+        }
+    </script>
+</body>
+</html>
